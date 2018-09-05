@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start":"node --inspect-brk=9229 ./src/sort.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.5.0"
+  }
+}

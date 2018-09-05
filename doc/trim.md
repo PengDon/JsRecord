@@ -148,16 +148,16 @@ function trim(str){
 
     
 
- -  方法12：针对方法10改进，改进的不是性能速度，而是易记与使用。还存在问题
+ -  方法12：针对方法10改进，改进的不是性能速度，而是易记与使用。[无效代码]
  
 
     
-```
+<!-- ```
 function trim(str){
       var m = str.length;
       for(var i = -1;str.charCodeAt(++i)<=32;)
       for(var j = m-1;j>i && str.charCodeAt(j) <= 32; j--)
       return str.slice(i,j+1);
 }
-```
+``` -->
 
