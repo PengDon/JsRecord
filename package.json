@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start":"node --inspect-brk=9229 ./src/sort.js",
+    "start": "node --inspect-brk=9229 ./src/sort.js",
     "test": "jest"
   },
   "devDependencies": {
