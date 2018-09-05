@@ -8,6 +8,22 @@
  */
 const swap = (arr,a,b) => [arr[a],arr[b]] = [arr[b],arr[a]];
 
+/**
+ * @name 获取数组中的最大值
+ *
+ * @param {Array} arr
+ */
+const max = (arr)=> Math.max(...arr);
+
+/**
+ * @name 获取数组中的最小值
+ *
+ * @param {Array} arr
+ */
+const min = (arr)=> Math.min(...arr);
+
 export {
-  swap
+  swap,
+  max,
+  min
 }
