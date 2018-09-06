@@ -132,7 +132,7 @@ const removeSome = (model, arr) => {
     case 12:
       // 数组递归去重,运用递归的思想,先排序，然后从最后开始比较，遇到相同，则删除
       let len = arr.length;
-      arr.sort((a, b)=>{  //对数组进行排序才能方便比较
+      arr.sort((a, b) => {  //对数组进行排序才能方便比较
         return a - b;
       })
       const loop = (index) => {
@@ -145,6 +145,17 @@ const removeSome = (model, arr) => {
       }
       loop(len - 1);
       newArr = arr;
+      break;
+    case 13:
+      // 利用indexOf以及forEach
+      let result = [];
+      arr.forEach((v, i, arr) => {  // 这里利用map，filter方法也可以实现
+        let bool = arr.indexOf(v, i + 1);  // 从传入参数的下一个索引值开始寻找是否存在重复
+        if (bool === -1) {
+          result.push(v);
+        }
+      })
+      newArr = result;
       break;
 
     default:

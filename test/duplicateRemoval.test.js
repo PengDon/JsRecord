@@ -3,6 +3,7 @@ import removeSome from '../src/duplicateRemoval';
 let arr = [2,5,6,33,7,5,6,7,5,4,11,23,42]; // 无效数组
 let rst = [2,5,6,33,7,4,11,23,42]; // 去重后的数组
 let abRst = [11, 2, 23, 33, 4, 42, 5, 6, 7]; // 去重并按升序排序后的数组
+let mRst =  [2, 4, 5, 6, 7, 11, 23, 33, 42]; // 去重并按数字从小到大排序
 
 test(`方法1`, () => {
   expect(removeSome(1,arr)).toEqual(rst);
@@ -53,5 +54,9 @@ test(`方法11`, () => {
 })
 
 test(`方法12`, () => {
-  expect(removeSome(11,arr)).toEqual(abRst);
+  expect(removeSome(12,arr)).toEqual(mRst);
+})
+
+test(`方法13`, () => {
+  expect(removeSome(13,arr)).toEqual(mRst);
 })
